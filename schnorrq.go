@@ -2,30 +2,10 @@ package schnorrq
 
 /*
 #cgo CFLAGS: -g -Wall
-#cgo LDFLAGS: -L. -lfourq-qubic
+#cgo LDFLAGS: -L./lib -lfourq-qubic -Wl,-rpath=./lib
 #include "fourq-qubic.h"
 */
 import "C"
-import (
-	"os"
-	"path/filepath"
-	"runtime"
-)
-
-func init() {
-	// Get the path of the current file
-	_, filename, _, _ := runtime.Caller(0)
-	dir := filepath.Dir(filename)
-	// Check if LD_LIBRARY_PATH is already set
-	currLDPath := os.Getenv("LD_LIBRARY_PATH")
-	if currLDPath == "" {
-		// If LD_LIBRARY_PATH is not set, set it to the path of the shared library
-		os.Setenv("LD_LIBRARY_PATH", dir)
-	} else {
-		// If LD_LIBRARY_PATH is already set, append the path of the shared library
-		os.Setenv("LD_LIBRARY_PATH", currLDPath+":"+dir)
-	}
-}
 
 func Sign(subseed [32]byte, pubKey [32]byte, messageDigest [32]byte) [64]byte {
 	// Call the C function to sign the transaction
