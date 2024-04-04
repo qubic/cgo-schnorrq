@@ -4,6 +4,8 @@ package schnorrq
 #cgo CFLAGS: -g -Wall
 #cgo LDFLAGS: -L./lib -lfourqsign -Wl,-rpath=./lib
 #include "fourqsign.h"
+
+void signTransaction(const unsigned char* subseed, const unsigned char* publicKey, const unsigned char* messageDigest, unsigned char* signature);
 */
 import "C"
 
