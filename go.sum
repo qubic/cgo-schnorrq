@@ -1,0 +1,10 @@
+github.com/cloudflare/circl v1.3.6 h1:/xbKIqSHbZXHwkhbrhrt2YOHIwYJlXH94E3tI/gDlUg=
+github.com/cloudflare/circl v1.3.6/go.mod h1:5XYMA4rFBvNIrhs50XuiBJ15vF2pZn4nnUKZrLbUZFA=
+github.com/cloudflare/fourq v0.0.0-20170427000316-8ada258cf9c8 h1:748sGeXXbplK0UVPDLbhh53hejCnvv/u6jn2RPBfyI8=
+github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
+github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
+github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
+github.com/qubic/go-node-connector v0.4.2 h1:+BM2r8R0TQtbDjBsBCzohogOCOKXernZ6tOs7P2UKGI=
+github.com/qubic/go-node-connector v0.4.2/go.mod h1:bY0Ojb1eGOyo0vd3a0k5ygwu08oh1feLzwZWFAxnx2k=
+golang.org/x/sys v0.3.0 h1:w8ZOecv6NaNa/zC8944JTU3vz4u6Lagfk4RPQxv92NQ=
+golang.org/x/sys v0.3.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
